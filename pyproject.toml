@@ -1,0 +1,25 @@
+[project]
+name = "media-handler-python-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "navithasri-doctutorials", email = "navithasri.n@doctutorials.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.165.0",
+    "fastapi-users[sqlalchemy]>=15.0.5",
+    "python-dotenv>=1.2.4",
+    "imagekitio==4.1.0",
+    "uvicorn[standard]>=0.54.0",
+    "aiosqlite>=0.22.1",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+media-handler-python-fastapi = "media_handler_python_fastapi:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
